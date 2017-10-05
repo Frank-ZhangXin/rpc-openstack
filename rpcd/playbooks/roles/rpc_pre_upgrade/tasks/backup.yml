@@ -36,3 +36,4 @@
     mode: pull
     src: "{{ groups['galera_all'][0] }}:/var/backup/galera-backup-{{ datetime_stamp }}.xbstream"
     dest: "{{ backup_dir }}/galera-backup-{{ datetime_stamp }}.xbstream"
+  ignore_errors: yes
